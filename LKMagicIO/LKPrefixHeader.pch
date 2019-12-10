@@ -1,0 +1,29 @@
+//
+//  LKPrefixHeader.pch
+//  LKMagicIO
+//
+//  Created by LK on 2019/12/2.
+//  Copyright © 2019 LK. All rights reserved.
+//
+
+#ifndef LKPrefixHeader_pch
+#define LKPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//base
+#import "LKMacro.h"
+#import "LKHeader.h"
+
+//third
+#import <AFNetworking/AFNetworking.h>
+#import <MJRefresh/MJRefresh.h>
+#import <FSCalendar/FSCalendar.h>
+#import <Masonry/Masonry.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <MJExtension/MJExtension.h>
+#import <RealReachability/RealReachability.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
+#endif /* LKPrefixHeader_pch */

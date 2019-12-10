@@ -1,0 +1,974 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36052766832AA13756CB1D0D /* libPods-LKMagicIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4540CD24081DA3CDADC0DA76 /* libPods-LKMagicIO.a */; };
+		4A0C31AD2398DEF3000F7DFC /* LKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C31AC2398DEF3000F7DFC /* LKNavigationController.m */; };
+		4A0C31B92398DF94000F7DFC /* LKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C31B82398DF94000F7DFC /* LKTabBarController.m */; };
+		4A0C31BC2398DFB3000F7DFC /* LKInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C31BB2398DFB3000F7DFC /* LKInfoViewController.m */; };
+		4A0C31BF2398DFD4000F7DFC /* LKInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C31BD2398DFD4000F7DFC /* LKInfoTableViewCell.m */; };
+		4A0C31C62398E0E0000F7DFC /* LKExtendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C31C52398E0E0000F7DFC /* LKExtendListViewController.m */; };
+		4A0C31C92398EFD4000F7DFC /* UINavigationController+LKConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C31C82398EFD4000F7DFC /* UINavigationController+LKConfig.m */; };
+		4A0C31CC2398F2ED000F7DFC /* LKInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C31CB2398F2ED000F7DFC /* LKInfoModel.m */; };
+		4A0C31CF2398F954000F7DFC /* NSDictionary+LKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C31CE2398F954000F7DFC /* NSDictionary+LKAdd.m */; };
+		4A0C31D52398FA9D000F7DFC /* NSString+LKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C31D42398FA9D000F7DFC /* NSString+LKAdd.m */; };
+		4A0C31D82398FAE7000F7DFC /* NSArray+LKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C31D72398FAE7000F7DFC /* NSArray+LKAdd.m */; };
+		4ACCAED7239E2A9C00E63E9C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACCAED6239E2A9C00E63E9C /* CoreTelephony.framework */; };
+		4ACCAEDA239E454800E63E9C /* NSString+LKFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCAED9239E454800E63E9C /* NSString+LKFormat.m */; };
+		4ACCAEDC239F3DC000E63E9C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACCAEDB239F3DC000E63E9C /* CFNetwork.framework */; };
+		4AEEB4A22394E7F300919F04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEB4A12394E7F300919F04 /* AppDelegate.m */; };
+		4AEEB4AD2394E7F400919F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AEEB4AC2394E7F400919F04 /* Assets.xcassets */; };
+		4AEEB4B02394E7F400919F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEEB4AE2394E7F400919F04 /* LaunchScreen.storyboard */; };
+		4AEEB4B32394E7F400919F04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEB4B22394E7F400919F04 /* main.m */; };
+		4AEEB4BD2394E7F400919F04 /* LKMagicIOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEB4BC2394E7F400919F04 /* LKMagicIOTests.m */; };
+		4AEEB4C82394E7F400919F04 /* LKMagicIOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEB4C72394E7F400919F04 /* LKMagicIOUITests.m */; };
+		4AEEB4D72394E85800919F04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEEB4D62394E85800919F04 /* UIKit.framework */; };
+		4AEEB4D92394E86200919F04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEEB4D82394E86200919F04 /* Foundation.framework */; };
+		4AEEB4E12394EC6A00919F04 /* libobjc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEEB4E02394EC6A00919F04 /* libobjc.tbd */; };
+		4AEEB4F32395146200919F04 /* UIView+LKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEB4F22395146200919F04 /* UIView+LKAdd.m */; };
+		4AEEB4F823951AF700919F04 /* UIColor+LKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEB4F723951AF700919F04 /* UIColor+LKAdd.m */; };
+		4AEEB4FC2395212E00919F04 /* LKBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEB4FB2395212E00919F04 /* LKBaseTableView.m */; };
+		4AEEB4FF2395216A00919F04 /* LKBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEB4FE2395216A00919F04 /* LKBaseTableViewCell.m */; };
+		4AEEB506239521D300919F04 /* LKBaseTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEB505239521D300919F04 /* LKBaseTableViewCellModel.m */; };
+		4AEEB50923967F5B00919F04 /* UIDevice+IO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEB50723967F5B00919F04 /* UIDevice+IO.m */; };
+		4AEEB50C23967F8000919F04 /* LKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEB50B23967F8000919F04 /* LKBaseViewController.m */; };
+		4AEEB50F23967FB500919F04 /* LKBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEB50E23967FB500919F04 /* LKBaseModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AEEB4B92394E7F400919F04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AEEB4952394E7F300919F04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AEEB49C2394E7F300919F04;
+			remoteInfo = LKMagicIO;
+		};
+		4AEEB4C42394E7F400919F04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AEEB4952394E7F300919F04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AEEB49C2394E7F300919F04;
+			remoteInfo = LKMagicIO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0315BE401D0BF5CE36519705 /* Pods-LKMagicIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKMagicIO.debug.xcconfig"; path = "Target Support Files/Pods-LKMagicIO/Pods-LKMagicIO.debug.xcconfig"; sourceTree = "<group>"; };
+		3B7D8AC2A7FE9CA02EDE4116 /* Pods-LKMagicIO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKMagicIO.release.xcconfig"; path = "Target Support Files/Pods-LKMagicIO/Pods-LKMagicIO.release.xcconfig"; sourceTree = "<group>"; };
+		4540CD24081DA3CDADC0DA76 /* libPods-LKMagicIO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKMagicIO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0C31AB2398DEF3000F7DFC /* LKNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKNavigationController.h; sourceTree = "<group>"; };
+		4A0C31AC2398DEF3000F7DFC /* LKNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKNavigationController.m; sourceTree = "<group>"; };
+		4A0C31B72398DF94000F7DFC /* LKTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKTabBarController.h; sourceTree = "<group>"; };
+		4A0C31B82398DF94000F7DFC /* LKTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKTabBarController.m; sourceTree = "<group>"; };
+		4A0C31BA2398DFB3000F7DFC /* LKInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKInfoViewController.h; sourceTree = "<group>"; };
+		4A0C31BB2398DFB3000F7DFC /* LKInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKInfoViewController.m; sourceTree = "<group>"; };
+		4A0C31BD2398DFD4000F7DFC /* LKInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKInfoTableViewCell.m; sourceTree = "<group>"; };
+		4A0C31BE2398DFD4000F7DFC /* LKInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKInfoTableViewCell.h; sourceTree = "<group>"; };
+		4A0C31C42398E0E0000F7DFC /* LKExtendListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKExtendListViewController.h; sourceTree = "<group>"; };
+		4A0C31C52398E0E0000F7DFC /* LKExtendListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKExtendListViewController.m; sourceTree = "<group>"; };
+		4A0C31C72398EFD4000F7DFC /* UINavigationController+LKConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LKConfig.h"; sourceTree = "<group>"; };
+		4A0C31C82398EFD4000F7DFC /* UINavigationController+LKConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LKConfig.m"; sourceTree = "<group>"; };
+		4A0C31CA2398F2ED000F7DFC /* LKInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKInfoModel.h; sourceTree = "<group>"; };
+		4A0C31CB2398F2ED000F7DFC /* LKInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKInfoModel.m; sourceTree = "<group>"; };
+		4A0C31CD2398F954000F7DFC /* NSDictionary+LKAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LKAdd.h"; sourceTree = "<group>"; };
+		4A0C31CE2398F954000F7DFC /* NSDictionary+LKAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LKAdd.m"; sourceTree = "<group>"; };
+		4A0C31D32398FA9D000F7DFC /* NSString+LKAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LKAdd.h"; sourceTree = "<group>"; };
+		4A0C31D42398FA9D000F7DFC /* NSString+LKAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LKAdd.m"; sourceTree = "<group>"; };
+		4A0C31D62398FAE7000F7DFC /* NSArray+LKAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+LKAdd.h"; sourceTree = "<group>"; };
+		4A0C31D72398FAE7000F7DFC /* NSArray+LKAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LKAdd.m"; sourceTree = "<group>"; };
+		4A0C31D92398FBE5000F7DFC /* LKHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKHeader.h; sourceTree = "<group>"; };
+		4ACCAED6239E2A9C00E63E9C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4ACCAED8239E454800E63E9C /* NSString+LKFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LKFormat.h"; sourceTree = "<group>"; };
+		4ACCAED9239E454800E63E9C /* NSString+LKFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LKFormat.m"; sourceTree = "<group>"; };
+		4ACCAEDB239F3DC000E63E9C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4AEEB49D2394E7F300919F04 /* LKMagicIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKMagicIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEEB4A02394E7F300919F04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4AEEB4A12394E7F300919F04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4AEEB4AC2394E7F400919F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AEEB4AF2394E7F400919F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AEEB4B12394E7F400919F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AEEB4B22394E7F400919F04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4AEEB4B82394E7F400919F04 /* LKMagicIOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKMagicIOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEEB4BC2394E7F400919F04 /* LKMagicIOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKMagicIOTests.m; sourceTree = "<group>"; };
+		4AEEB4BE2394E7F400919F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AEEB4C32394E7F400919F04 /* LKMagicIOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKMagicIOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEEB4C72394E7F400919F04 /* LKMagicIOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKMagicIOUITests.m; sourceTree = "<group>"; };
+		4AEEB4C92394E7F400919F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AEEB4D62394E85800919F04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4AEEB4D82394E86200919F04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4AEEB4DA2394E96100919F04 /* DeviceCheck.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceCheck.framework; path = System/Library/Frameworks/DeviceCheck.framework; sourceTree = SDKROOT; };
+		4AEEB4E02394EC6A00919F04 /* libobjc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.tbd; path = usr/lib/libobjc.tbd; sourceTree = SDKROOT; };
+		4AEEB4EA23950BEF00919F04 /* LKMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKMacro.h; sourceTree = "<group>"; };
+		4AEEB4F12395146200919F04 /* UIView+LKAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LKAdd.h"; sourceTree = "<group>"; };
+		4AEEB4F22395146200919F04 /* UIView+LKAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LKAdd.m"; sourceTree = "<group>"; };
+		4AEEB4F5239515F700919F04 /* LKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKPrefixHeader.pch; sourceTree = "<group>"; };
+		4AEEB4F623951AF700919F04 /* UIColor+LKAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+LKAdd.h"; sourceTree = "<group>"; };
+		4AEEB4F723951AF700919F04 /* UIColor+LKAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LKAdd.m"; sourceTree = "<group>"; };
+		4AEEB4FA2395212E00919F04 /* LKBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKBaseTableView.h; sourceTree = "<group>"; };
+		4AEEB4FB2395212E00919F04 /* LKBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKBaseTableView.m; sourceTree = "<group>"; };
+		4AEEB4FD2395216A00919F04 /* LKBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKBaseTableViewCell.h; sourceTree = "<group>"; };
+		4AEEB4FE2395216A00919F04 /* LKBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKBaseTableViewCell.m; sourceTree = "<group>"; };
+		4AEEB504239521D300919F04 /* LKBaseTableViewCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKBaseTableViewCellModel.h; sourceTree = "<group>"; };
+		4AEEB505239521D300919F04 /* LKBaseTableViewCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKBaseTableViewCellModel.m; sourceTree = "<group>"; };
+		4AEEB50723967F5B00919F04 /* UIDevice+IO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IO.m"; sourceTree = "<group>"; };
+		4AEEB50823967F5B00919F04 /* UIDevice+IO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IO.h"; sourceTree = "<group>"; };
+		4AEEB50A23967F8000919F04 /* LKBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKBaseViewController.h; sourceTree = "<group>"; };
+		4AEEB50B23967F8000919F04 /* LKBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKBaseViewController.m; sourceTree = "<group>"; };
+		4AEEB50D23967FB500919F04 /* LKBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKBaseModel.h; sourceTree = "<group>"; };
+		4AEEB50E23967FB500919F04 /* LKBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKBaseModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AEEB49A2394E7F300919F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ACCAEDC239F3DC000E63E9C /* CFNetwork.framework in Frameworks */,
+				4ACCAED7239E2A9C00E63E9C /* CoreTelephony.framework in Frameworks */,
+				4AEEB4E12394EC6A00919F04 /* libobjc.tbd in Frameworks */,
+				4AEEB4D92394E86200919F04 /* Foundation.framework in Frameworks */,
+				4AEEB4D72394E85800919F04 /* UIKit.framework in Frameworks */,
+				36052766832AA13756CB1D0D /* libPods-LKMagicIO.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEEB4B52394E7F400919F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEEB4C02394E7F400919F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A0C31AE2398DF75000F7DFC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C31AF2398DF75000F7DFC /* Info */,
+				4A0C31C02398E0C8000F7DFC /* Extend */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4A0C31AF2398DF75000F7DFC /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C31B02398DF75000F7DFC /* Controller */,
+				4A0C31B12398DF75000F7DFC /* Model */,
+				4A0C31B22398DF75000F7DFC /* View */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		4A0C31B02398DF75000F7DFC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C31BA2398DFB3000F7DFC /* LKInfoViewController.h */,
+				4A0C31BB2398DFB3000F7DFC /* LKInfoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A0C31B12398DF75000F7DFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C31CA2398F2ED000F7DFC /* LKInfoModel.h */,
+				4A0C31CB2398F2ED000F7DFC /* LKInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A0C31B22398DF75000F7DFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C31BE2398DFD4000F7DFC /* LKInfoTableViewCell.h */,
+				4A0C31BD2398DFD4000F7DFC /* LKInfoTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A0C31C02398E0C8000F7DFC /* Extend */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C31C12398E0C8000F7DFC /* Controller */,
+				4A0C31C22398E0C8000F7DFC /* Model */,
+				4A0C31C32398E0C8000F7DFC /* View */,
+			);
+			path = Extend;
+			sourceTree = "<group>";
+		};
+		4A0C31C12398E0C8000F7DFC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A0C31C42398E0E0000F7DFC /* LKExtendListViewController.h */,
+				4A0C31C52398E0E0000F7DFC /* LKExtendListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A0C31C22398E0C8000F7DFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A0C31C32398E0C8000F7DFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4AEEB4942394E7F300919F04 = {
+			isa = PBXGroup;
+			children = (
+				4AEEB49F2394E7F300919F04 /* LKMagicIO */,
+				4AEEB4BB2394E7F400919F04 /* LKMagicIOTests */,
+				4AEEB4C62394E7F400919F04 /* LKMagicIOUITests */,
+				4AEEB49E2394E7F300919F04 /* Products */,
+				4AEEB4D52394E85800919F04 /* Frameworks */,
+				6BED25162520042F72E68C9E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4AEEB49E2394E7F300919F04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AEEB49D2394E7F300919F04 /* LKMagicIO.app */,
+				4AEEB4B82394E7F400919F04 /* LKMagicIOTests.xctest */,
+				4AEEB4C32394E7F400919F04 /* LKMagicIOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AEEB49F2394E7F300919F04 /* LKMagicIO */ = {
+			isa = PBXGroup;
+			children = (
+				4AEEB4E623950B5700919F04 /* Tools */,
+				4AEEB4A02394E7F300919F04 /* AppDelegate.h */,
+				4AEEB4A12394E7F300919F04 /* AppDelegate.m */,
+				4A0C31AE2398DF75000F7DFC /* Classes */,
+				4AEEB4AC2394E7F400919F04 /* Assets.xcassets */,
+				4AEEB4AE2394E7F400919F04 /* LaunchScreen.storyboard */,
+				4AEEB4B12394E7F400919F04 /* Info.plist */,
+				4AEEB4F5239515F700919F04 /* LKPrefixHeader.pch */,
+				4AEEB4B22394E7F400919F04 /* main.m */,
+			);
+			path = LKMagicIO;
+			sourceTree = "<group>";
+		};
+		4AEEB4BB2394E7F400919F04 /* LKMagicIOTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AEEB4BC2394E7F400919F04 /* LKMagicIOTests.m */,
+				4AEEB4BE2394E7F400919F04 /* Info.plist */,
+			);
+			path = LKMagicIOTests;
+			sourceTree = "<group>";
+		};
+		4AEEB4C62394E7F400919F04 /* LKMagicIOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AEEB4C72394E7F400919F04 /* LKMagicIOUITests.m */,
+				4AEEB4C92394E7F400919F04 /* Info.plist */,
+			);
+			path = LKMagicIOUITests;
+			sourceTree = "<group>";
+		};
+		4AEEB4D52394E85800919F04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ACCAEDB239F3DC000E63E9C /* CFNetwork.framework */,
+				4ACCAED6239E2A9C00E63E9C /* CoreTelephony.framework */,
+				4AEEB4E02394EC6A00919F04 /* libobjc.tbd */,
+				4AEEB4DA2394E96100919F04 /* DeviceCheck.framework */,
+				4AEEB4D82394E86200919F04 /* Foundation.framework */,
+				4AEEB4D62394E85800919F04 /* UIKit.framework */,
+				4540CD24081DA3CDADC0DA76 /* libPods-LKMagicIO.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AEEB4E623950B5700919F04 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4AEEB4E823950BC700919F04 /* Base */,
+				4AEEB4E723950BC700919F04 /* categorys */,
+				4AEEB4E923950BC700919F04 /* Macro */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4AEEB4E723950BC700919F04 /* categorys */ = {
+			isa = PBXGroup;
+			children = (
+				4AEEB4F12395146200919F04 /* UIView+LKAdd.h */,
+				4AEEB4F22395146200919F04 /* UIView+LKAdd.m */,
+				4AEEB4F623951AF700919F04 /* UIColor+LKAdd.h */,
+				4AEEB4F723951AF700919F04 /* UIColor+LKAdd.m */,
+				4AEEB50823967F5B00919F04 /* UIDevice+IO.h */,
+				4AEEB50723967F5B00919F04 /* UIDevice+IO.m */,
+				4A0C31CD2398F954000F7DFC /* NSDictionary+LKAdd.h */,
+				4A0C31CE2398F954000F7DFC /* NSDictionary+LKAdd.m */,
+				4A0C31D32398FA9D000F7DFC /* NSString+LKAdd.h */,
+				4A0C31D42398FA9D000F7DFC /* NSString+LKAdd.m */,
+				4ACCAED8239E454800E63E9C /* NSString+LKFormat.h */,
+				4ACCAED9239E454800E63E9C /* NSString+LKFormat.m */,
+				4A0C31D62398FAE7000F7DFC /* NSArray+LKAdd.h */,
+				4A0C31D72398FAE7000F7DFC /* NSArray+LKAdd.m */,
+			);
+			path = categorys;
+			sourceTree = "<group>";
+		};
+		4AEEB4E823950BC700919F04 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4AEEB4F92395210200919F04 /* LKBaseTableView */,
+				4AEEB50A23967F8000919F04 /* LKBaseViewController.h */,
+				4AEEB50B23967F8000919F04 /* LKBaseViewController.m */,
+				4A0C31AB2398DEF3000F7DFC /* LKNavigationController.h */,
+				4A0C31AC2398DEF3000F7DFC /* LKNavigationController.m */,
+				4A0C31C72398EFD4000F7DFC /* UINavigationController+LKConfig.h */,
+				4A0C31C82398EFD4000F7DFC /* UINavigationController+LKConfig.m */,
+				4A0C31B72398DF94000F7DFC /* LKTabBarController.h */,
+				4A0C31B82398DF94000F7DFC /* LKTabBarController.m */,
+				4AEEB50D23967FB500919F04 /* LKBaseModel.h */,
+				4AEEB50E23967FB500919F04 /* LKBaseModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4AEEB4E923950BC700919F04 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				4AEEB4EA23950BEF00919F04 /* LKMacro.h */,
+				4A0C31D92398FBE5000F7DFC /* LKHeader.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		4AEEB4F92395210200919F04 /* LKBaseTableView */ = {
+			isa = PBXGroup;
+			children = (
+				4AEEB4FA2395212E00919F04 /* LKBaseTableView.h */,
+				4AEEB4FB2395212E00919F04 /* LKBaseTableView.m */,
+				4AEEB4FD2395216A00919F04 /* LKBaseTableViewCell.h */,
+				4AEEB4FE2395216A00919F04 /* LKBaseTableViewCell.m */,
+				4AEEB504239521D300919F04 /* LKBaseTableViewCellModel.h */,
+				4AEEB505239521D300919F04 /* LKBaseTableViewCellModel.m */,
+			);
+			path = LKBaseTableView;
+			sourceTree = "<group>";
+		};
+		6BED25162520042F72E68C9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0315BE401D0BF5CE36519705 /* Pods-LKMagicIO.debug.xcconfig */,
+				3B7D8AC2A7FE9CA02EDE4116 /* Pods-LKMagicIO.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AEEB49C2394E7F300919F04 /* LKMagicIO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AEEB4CC2394E7F400919F04 /* Build configuration list for PBXNativeTarget "LKMagicIO" */;
+			buildPhases = (
+				F63852325CD0966ECB3656C5 /* [CP] Check Pods Manifest.lock */,
+				4AEEB4992394E7F300919F04 /* Sources */,
+				4AEEB49A2394E7F300919F04 /* Frameworks */,
+				4AEEB49B2394E7F300919F04 /* Resources */,
+				9A63327886735A68D2BF9D2B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LKMagicIO;
+			productName = LKMagicIO;
+			productReference = 4AEEB49D2394E7F300919F04 /* LKMagicIO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AEEB4B72394E7F400919F04 /* LKMagicIOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AEEB4CF2394E7F400919F04 /* Build configuration list for PBXNativeTarget "LKMagicIOTests" */;
+			buildPhases = (
+				4AEEB4B42394E7F400919F04 /* Sources */,
+				4AEEB4B52394E7F400919F04 /* Frameworks */,
+				4AEEB4B62394E7F400919F04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AEEB4BA2394E7F400919F04 /* PBXTargetDependency */,
+			);
+			name = LKMagicIOTests;
+			productName = LKMagicIOTests;
+			productReference = 4AEEB4B82394E7F400919F04 /* LKMagicIOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AEEB4C22394E7F400919F04 /* LKMagicIOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AEEB4D22394E7F400919F04 /* Build configuration list for PBXNativeTarget "LKMagicIOUITests" */;
+			buildPhases = (
+				4AEEB4BF2394E7F400919F04 /* Sources */,
+				4AEEB4C02394E7F400919F04 /* Frameworks */,
+				4AEEB4C12394E7F400919F04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AEEB4C52394E7F400919F04 /* PBXTargetDependency */,
+			);
+			name = LKMagicIOUITests;
+			productName = LKMagicIOUITests;
+			productReference = 4AEEB4C32394E7F400919F04 /* LKMagicIOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AEEB4952394E7F300919F04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = LK;
+				TargetAttributes = {
+					4AEEB49C2394E7F300919F04 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					4AEEB4B72394E7F400919F04 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 4AEEB49C2394E7F300919F04;
+					};
+					4AEEB4C22394E7F400919F04 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 4AEEB49C2394E7F300919F04;
+					};
+				};
+			};
+			buildConfigurationList = 4AEEB4982394E7F300919F04 /* Build configuration list for PBXProject "LKMagicIO" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AEEB4942394E7F300919F04;
+			productRefGroup = 4AEEB49E2394E7F300919F04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AEEB49C2394E7F300919F04 /* LKMagicIO */,
+				4AEEB4B72394E7F400919F04 /* LKMagicIOTests */,
+				4AEEB4C22394E7F400919F04 /* LKMagicIOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AEEB49B2394E7F300919F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEEB4B02394E7F400919F04 /* LaunchScreen.storyboard in Resources */,
+				4AEEB4AD2394E7F400919F04 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEEB4B62394E7F400919F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEEB4C12394E7F400919F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A63327886735A68D2BF9D2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LKMagicIO/Pods-LKMagicIO-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LKMagicIO/Pods-LKMagicIO-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LKMagicIO/Pods-LKMagicIO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F63852325CD0966ECB3656C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LKMagicIO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AEEB4992394E7F300919F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEEB50F23967FB500919F04 /* LKBaseModel.m in Sources */,
+				4A0C31BF2398DFD4000F7DFC /* LKInfoTableViewCell.m in Sources */,
+				4A0C31C92398EFD4000F7DFC /* UINavigationController+LKConfig.m in Sources */,
+				4AEEB4FC2395212E00919F04 /* LKBaseTableView.m in Sources */,
+				4A0C31C62398E0E0000F7DFC /* LKExtendListViewController.m in Sources */,
+				4A0C31D82398FAE7000F7DFC /* NSArray+LKAdd.m in Sources */,
+				4A0C31BC2398DFB3000F7DFC /* LKInfoViewController.m in Sources */,
+				4AEEB50C23967F8000919F04 /* LKBaseViewController.m in Sources */,
+				4A0C31CC2398F2ED000F7DFC /* LKInfoModel.m in Sources */,
+				4AEEB506239521D300919F04 /* LKBaseTableViewCellModel.m in Sources */,
+				4AEEB4A22394E7F300919F04 /* AppDelegate.m in Sources */,
+				4AEEB4F32395146200919F04 /* UIView+LKAdd.m in Sources */,
+				4ACCAEDA239E454800E63E9C /* NSString+LKFormat.m in Sources */,
+				4AEEB50923967F5B00919F04 /* UIDevice+IO.m in Sources */,
+				4AEEB4F823951AF700919F04 /* UIColor+LKAdd.m in Sources */,
+				4A0C31D52398FA9D000F7DFC /* NSString+LKAdd.m in Sources */,
+				4A0C31CF2398F954000F7DFC /* NSDictionary+LKAdd.m in Sources */,
+				4AEEB4B32394E7F400919F04 /* main.m in Sources */,
+				4AEEB4FF2395216A00919F04 /* LKBaseTableViewCell.m in Sources */,
+				4A0C31AD2398DEF3000F7DFC /* LKNavigationController.m in Sources */,
+				4A0C31B92398DF94000F7DFC /* LKTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEEB4B42394E7F400919F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEEB4BD2394E7F400919F04 /* LKMagicIOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AEEB4BF2394E7F400919F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEEB4C82394E7F400919F04 /* LKMagicIOUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AEEB4BA2394E7F400919F04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AEEB49C2394E7F300919F04 /* LKMagicIO */;
+			targetProxy = 4AEEB4B92394E7F400919F04 /* PBXContainerItemProxy */;
+		};
+		4AEEB4C52394E7F400919F04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AEEB49C2394E7F300919F04 /* LKMagicIO */;
+			targetProxy = 4AEEB4C42394E7F400919F04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AEEB4AE2394E7F400919F04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AEEB4AF2394E7F400919F04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AEEB4CA2394E7F400919F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4AEEB4CB2394E7F400919F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AEEB4CD2394E7F400919F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0315BE401D0BF5CE36519705 /* Pods-LKMagicIO.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4K9H6EPGPS;
+				GCC_PREFIX_HEADER = LKMagicIO/LKPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/FSCalendar\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/RealReachability\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+				);
+				INFOPLIST_FILE = LKMagicIO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"FSCalendar\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"RealReachability\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lmbang.team;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = LMBang_Dev_Team;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4AEEB4CE2394E7F400919F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B7D8AC2A7FE9CA02EDE4116 /* Pods-LKMagicIO.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = LKMagicIO/LKPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/FSCalendar\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/RealReachability\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+				);
+				INFOPLIST_FILE = LKMagicIO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"FSCalendar\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"RealReachability\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lmbang.team;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4AEEB4D02394E7F400919F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LKMagicIOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lk.magic.LKMagicIOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LKMagicIO.app/LKMagicIO";
+			};
+			name = Debug;
+		};
+		4AEEB4D12394E7F400919F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LKMagicIOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lk.magic.LKMagicIOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LKMagicIO.app/LKMagicIO";
+			};
+			name = Release;
+		};
+		4AEEB4D32394E7F400919F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LKMagicIOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lk.magic.LKMagicIOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LKMagicIO;
+			};
+			name = Debug;
+		};
+		4AEEB4D42394E7F400919F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LKMagicIOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lk.magic.LKMagicIOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LKMagicIO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AEEB4982394E7F300919F04 /* Build configuration list for PBXProject "LKMagicIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AEEB4CA2394E7F400919F04 /* Debug */,
+				4AEEB4CB2394E7F400919F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AEEB4CC2394E7F400919F04 /* Build configuration list for PBXNativeTarget "LKMagicIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AEEB4CD2394E7F400919F04 /* Debug */,
+				4AEEB4CE2394E7F400919F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AEEB4CF2394E7F400919F04 /* Build configuration list for PBXNativeTarget "LKMagicIOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AEEB4D02394E7F400919F04 /* Debug */,
+				4AEEB4D12394E7F400919F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AEEB4D22394E7F400919F04 /* Build configuration list for PBXNativeTarget "LKMagicIOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AEEB4D32394E7F400919F04 /* Debug */,
+				4AEEB4D42394E7F400919F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AEEB4952394E7F300919F04 /* Project object */;
+}
